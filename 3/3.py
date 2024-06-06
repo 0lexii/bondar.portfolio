@@ -1,9 +1,9 @@
-nltk.download('movie_reviews')
-
 import random
 import pickle
 import nltk
 from nltk.corpus import movie_reviews
+
+nltk.download('movie_reviews')
 
 doc = [(list(movie_reviews.words(fileid)), category)
        for category in movie_reviews.categories()
